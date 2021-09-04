@@ -1,0 +1,73 @@
+.page8Main{
+    background-image: url(../images/03-3_bg.jpg);
+    height: 720px;
+    & article{
+        width: 440px;
+        position: absolute;
+        top: 156px;
+        left: 75px;
+        & h2{
+            font-size: $f-2;
+            color: $tiitlePrimay;
+            font-weight: bold;
+            line-height: 22px;
+            margin-bottom: 1.25rem;
+        }
+        & p{
+            line-height: 22px;
+            color: #1b1b1b;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        & ul{
+            list-style-type: disc;
+            margin-left: 23px;
+        }
+        & ul li{
+            color: #1b1b1b;
+            font-weight: bold;
+            line-height: 26px;
+        }
+    }
+    @include mobile{
+        display: none;
+    }
+}
+// 手機
+.page8Phone{
+    display: none;
+    position: relative;
+    @include mobile{
+        display: block;
+    }
+    & img{
+        padding-top: 40px;
+    }
+    & .page8txt{
+        padding-top: 20px;
+        padding-left: 5%;
+        margin-bottom: 40px;
+    }
+    & h2{
+        font-size: $titleFz;
+        color: $tiitlePrimay;
+        line-height: 20px;
+    }
+    & p{
+        font-size: 15px;
+        color: #1b1b1b;
+        font-weight: bold;
+        margin-top: 20px;
+        line-height: 23px;
+    }
+    & ul{
+        list-style-type: disc;
+        margin-left: 23px;
+    }
+    & ul li{
+        color: #1b1b1b;
+        font-weight: bold;
+        line-height: 26px;
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,408 @@
+.positionAbsolute{
+    position: absolute;
+}
+.page4BannerAll{
+    position: relative;
+    height: 720px;
+    @include mobile{
+        display: none;
+    }
+    & p{
+        line-height: 26px;
+        color: #1b1b1b;
+        font-weight: 500;
+    }
+}
+.page4Banner1{
+    left: 0;
+}
+.BannerText{
+    top: 160px;
+    left: 122px;
+    color: $tiitlePrimay;
+    & li{
+        margin-bottom: 2rem;
+    }
+    & h2{
+        font-size: 18px;
+        margin-bottom: 1rem;
+    }
+    & span{
+        font-size: 26px;
+        margin-left: .5rem;
+    }
+}
+.page4Banner2{
+    width: 100%;
+    left: 1280px;
+}
+.page4Banner3{
+    width: 100%;
+    left: 2560px;
+    & p{
+        width: 225px;
+        line-height: 26px;
+        position: absolute;
+        top: 161px;
+        left: 545px;
+        font-weight: bold;
+    }
+    & .page3Title{
+        top: 275px;
+        left: 619px;
+        display: flex;
+        & .line{
+            width: 140px;
+            height: 1px;
+            background-color: #75722a;
+            margin-top: 10px;
+            margin-right: 5px;
+        }
+        & h2{
+            font-size: 20px;
+            font-weight: bold;
+            color: $h2-Primery;
+        }
+    }
+}
+.page4Banner4{
+    width: 100%;
+    left: 3840px;
+    & #Js-Page4-1{
+        display: none;
+        z-index: 1;
+        position: relative;
+    }
+    & #Js-Page4-2{
+        display: none;
+        z-index: 2;
+        top: 0;
+        position: absolute;
+    }
+    & #Js-Page4-3{
+        display: none;
+        z-index: 3;
+        top: 0;
+        position: absolute;
+    }
+}
+.Banner2Text{
+    position: absolute;
+    left: 142px;
+    top: 160px;
+    font-weight: bold;
+    & h2{
+        font-size: $titleFz;
+        color: $h2-Primery;
+        margin-bottom: 19px;
+        & span{
+            font-size: 26px;
+            margin-left: 0.3rem;
+        }
+    }
+    & h3{
+        font-size: $titleFz;
+        color: $h2-Primery;
+        margin-bottom: 9px;
+    }
+    & p{
+        font-weight: bold;
+    }
+    & p > span{
+        font-size: 20px;
+        color: #e60012;
+    }
+}
+.Banner2Text h4{
+    background-image: url(../images/architec_Trophy.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 42px;
+    margin-left: -40px;
+    font-size: 20px;
+    color: #3e5516;
+    line-height: 30px;
+}
+//箭頭部分
+.page4R{
+    background-image: url(../images/arrow_right.png);
+    width: 65px;
+    height: 40px;
+    background-color: $tiitlePrimay;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    bottom: 100px;
+    background-position: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: all .3s;
+    &:hover{
+        background-position: 80%;
+        background-color: #333;
+    }
+}
+.page4L{
+    background-image: url(../images/arrow_left.png);
+    width: 65px;
+    height: 40px;
+    background-color: $tiitlePrimay;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    bottom: 100px;
+    background-position: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: all .3s;
+    &:hover{
+        background-position: 20%;
+        background-color: #333;
+    }
+}
+.page4{
+    z-index: 10;
+}
+//小按鈕區塊
+
+//修正碧字體問題
+@font-face {
+    font-family: '新微軟正黑體';
+    unicode-range: U+7db0, U+78A7, U+7B75;
+    font-style: normal;
+    font-weight: bold;
+    src: local(MS Gothic), local(Yu Gothic);
+  }
+@font-face {
+font-family: '新微軟正黑體';
+unicode-range: U+7db0, U+78A7, U+7B75;
+font-style: normal;
+font-weight: normal;
+src: local(微軟正黑體), local(Microsoft JhengHei);
+}
+body {
+font-family: 'Open Sans', Verdana, Geneva,"新微軟正黑體",'Microsoft JhengHei',"微軟正黑體", sans-serif;
+}
+.btnClass{
+    position: absolute;
+    cursor: pointer;
+    & > img{
+        transition: all .4s;
+        border: 2px solid #c3c3c3;
+        &:hover{
+            border: 2px solid #8b8623;
+        }
+    }
+    & h3{
+        font-size: $f-0;
+        color: #1b1b1b;
+        text-align: right;
+        margin-top: 3px;
+        font-weight: normal;
+    }
+}
+.btn0{
+    top: 478px;
+    left: 238px;
+}
+.btn1{
+    top: 460px;
+    left: 78px;
+}
+.btn2{
+    top: 495px;
+    left: 386px;
+}
+.btn3{
+    top: 361px;
+    left: 445px;
+}
+.btn4{
+    top: 337px;
+    left: 133px;
+}
+.btn5{
+    top: 280px;
+    left: 285px;
+}
+.btn6{
+    top: 185px;
+    left: 146px;
+}
+.btn7{
+    top: 164px;
+    left: 303px;
+}
+.page4Banner{
+    z-index: 12;
+    height: 640px;
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 40px;
+    bottom: 0;
+}
+.page4Title{
+    position: absolute;
+    top: 330px;
+    left: 76px;
+    z-index: 5;
+    & h2{
+        font-size: $titleFz;
+        font-weight: bold;
+        color: $h2-Primery;
+        margin-bottom: 27px;
+    }
+    & p{
+        font-weight: bold;
+        color: #1b1b1b;
+    }
+}
+
+//手機版本
+.page4BannerMobile{
+    display: none;
+    @include mobile{
+        display: block;
+        position: relative;
+    }
+}
+//第一頁
+.page4Mobile1Text{
+    & h2{
+        font-weight: bold;
+        color: $h2-Primery;
+        font-size: $f-0;
+        margin: 20px 0 20px 15px;
+        & span{
+            margin-left: 0.5rem;
+        }
+    }
+    & p{
+        font-size: 12px;
+        font-weight: bold;
+        color: #1b1b1b;
+        line-height: 26px;
+        margin: 20px 0 0 15px;
+    }
+}
+//第二頁
+.page4Mobile2{
+    padding-top: 30px;
+}
+.page4Mobile2Text{
+    & h2{
+        margin: 30px 0 0 15px;
+        font-weight: bold;
+        color: $h2-Primery;
+        & span{
+            margin-left: 0.5rem;
+            font-size: 26px;
+        }
+    }
+    & h3{
+        font-weight: bold;
+        color: $h2-Primery;
+        font-size: 14px;
+        margin: 20px 0 0 15px;
+    }
+    & h4{
+        background-image: url(../images/architec_Trophy.png);
+        font-size: 14px;
+        line-height: 26px;
+        margin: 20px 0 0 15px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding-left: 2rem;
+        color: #3e5516;
+        font-weight: bold;
+    }
+    & p{
+        line-height: 26px;
+        font-size: 12px ;
+        font-weight:bold;
+        color: #1b1b1b;
+        padding-left: 1rem;
+        & span{
+            color: #e60012;
+            font-size: $f-0;
+        }
+    }
+}
+.page4Mobile3{
+    padding-top: 30px;
+    & h4{
+        font-size: 16px;
+        font-weight: bold;
+        color: #75722a;
+        margin: 20px 0 15px 15px;
+    }
+    & p{
+        line-height: 26px;
+        margin: 20px 0 0 15px;
+        font-weight:bold;
+        color: #1b1b1b;
+        font-size: 12px;
+    }
+    ul{
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: center;
+        & li{
+            cursor: pointer;
+            margin: 8px;
+        }
+        & li > img{
+            transition: all .4s;
+            border: 2px solid #c3c3c3;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            &:hover{
+                border: 2px solid #8b8623;
+                object-fit: cover;
+            }
+        }
+        & li h3{
+            text-align: right;
+            font-size: 10px;
+            margin-top: 4px;
+            color: #1b1b1b;
+            font-weight: normal;
+        }
+    }
+}
+.page4Mobile4{
+    & h2{
+        margin: 20px 0 0 15px;
+        font-size: 14px;
+        font-weight: bold;
+        color: $h2-Primery;
+    }
+    & p{
+        line-height: 26px;
+        margin: 20px 0 0 15px;
+        font-size: 12px;
+        font-weight: bold;
+        color: #1b1b1b;
+        margin-bottom: 50px;
+    }
+}
+.page4{
+    @include mobile{
+        position: static;
+    }
+}
+//SHow
+.MobileShow{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    margin: auto;
+    justify-content:center;
+    align-items: center;
+    background-color: rgba(0,0,0,.3);
+}

@@ -1,0 +1,241 @@
+.page6Main{
+    position: relative;
+    height: 720px;
+    & > ul{
+        padding: 5px 0;
+        display: -ms-flexbox;
+        display: flex;
+        position: absolute;
+        bottom: 40px;
+        left: 0;
+        background: #3e3a39;
+        align-items: center;
+        right: 0;
+        justify-content: center;
+        z-index: 9;
+        & li{
+            margin-right: 10px;
+            cursor: pointer;
+            // opacity: .5;
+            & img{
+                border: 2px solid #929292;
+                opacity: .5;
+                &.active{
+                    opacity: 1;
+                    transform: scale(1.2);
+                    border-color: $secondary;
+                }
+            }
+        }
+    }
+    @include mobile{
+        display: none;
+    }
+}
+.page6Banner1{
+    background-image: url(../images/02-3_bigPic1.jpg);
+    height: 720px;
+    position: absolute;
+    width: 100%;
+}
+.page6Banner2{
+    height: 720px;
+    display: none;
+    // background: red;
+    position: absolute;
+    left: 255px;
+    width: 1770px;
+    overflow: hidden;
+    & > ul{
+        display: flex;
+        position: absolute;
+        top: 40px;
+        left: 0px;
+        transition: all 1.5s;
+        & li{
+            margin-right: 10px;
+        }
+    }
+}
+.page6Banner3{
+    display: none;
+    height: 720px;
+    position: absolute;
+    left: 255px;
+    width: 1770px;
+    overflow: hidden;
+    & > ul{
+        display: flex;
+        position: absolute;
+        top: 40px;
+        left: 0px;
+        transition: all 1.5s;
+        & li{
+            margin-right: 10px;
+        }
+    }
+}
+.page6Banner4{
+    display: none;
+    height: 720px;
+    position: absolute;
+    left: 255px;
+    width: 1770px;
+    overflow: hidden;
+    & > ul{
+        display: flex;
+        position: absolute;
+        top: 40px;
+        left: 0px;
+        transition: all 1.5s;
+        & li{
+            margin-right: 10px;
+        }
+    }
+}
+.page6Banner5{
+    display: none;
+    height: 720px;
+    position: absolute;
+    left: 255px;
+    width: 1770px;
+    overflow: hidden;
+    & > ul{
+        display: flex;
+        position: absolute;
+        top: 40px;
+        left: 0px;
+        transition: all 1.5s;
+        & li{
+            margin-right: 10px;
+        }
+    }
+}
+.page6Left{
+    width: 255px;
+    height: 720px;
+    position: absolute;
+    display: none;
+    z-index: 10;
+    background-image: url(../images/02-3_bannerLeftMaskTxt.png);
+    justify-content: center;
+    color: $tiitlePrimay;
+    padding-top: 210px;
+    line-height: 26px;
+    font-weight: bold;
+}
+.showSlide{
+    height: 720px;
+    width: 1280px;
+    position: absolute;
+    display: none;
+    top:0;
+    // z-index: 11;
+}
+// 手機
+.page6BannerMobilr{
+    display: none;
+    @include mobile{
+        display: block;
+        position: relative;
+    }
+    & .page6Mobile1{
+        background-image: url(../images/02-3_bigPic1_Phone.jpg);
+        height: 460px;
+        background-size: cover;
+        background-position: 90% 0%;
+    }
+    & .page6Mobile1Txt{
+        padding-top: 10px;
+        padding-left: 5%;
+        & h2{
+            font-size: $titleFz;
+            color: $h2-Primery;
+            line-height: 25px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        & p{
+            font-size: 15px;
+            color: #1b1b1b;
+            line-height: 20px;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+    }
+    & .page6Mobile2{
+        border-top: 3px solid $secondary;
+        margin-bottom: 30px;
+        & .page6Mobile2Txt{
+            padding-top: 10px;
+            padding-left: 5%;
+            & p{
+                font-size: 15px;
+                color: $h2-Primery;
+                line-height: 20px;
+                font-weight: bold;
+            }
+        }
+    }
+    & .page6Mobile3{
+        border-top: 3px solid $secondary;
+        margin-bottom: 30px;
+        & .page6Mobile3Txt{
+            padding-top: 10px;
+            padding-left: 5%;
+            & p{
+                font-size: 15px;
+                color: $h2-Primery;
+                line-height: 20px;
+                font-weight: bold;
+            }
+        }
+    }
+    & .page6Mobile4{
+        border-top: 3px solid $secondary;
+        margin-bottom: 30px;
+        & .page6Mobile4Txt{
+            padding-top: 10px;
+            padding-left: 5%;
+            & p{
+                font-size: 15px;
+                color: $h2-Primery;
+                line-height: 20px;
+                font-weight: bold;
+            }
+        }
+    }
+    & .page6Mobile5{
+        border-top: 3px solid $secondary;
+        margin-bottom: 30px;
+        & .page6Mobile5Txt{
+            padding-top: 10px;
+            padding-left: 5%;
+            & p{
+                font-size: 15px;
+                color: $h2-Primery;
+                line-height: 20px;
+                font-weight: bold;
+            }
+        }
+    }
+    & .page6Mobile6{
+        border-top: 3px solid $secondary;
+        margin-bottom: 30px;
+        & .page6Mobile6Txt{
+            padding-top: 10px;
+            padding-left: 5%;
+            & p{
+                font-size: 15px;
+                color: $h2-Primery;
+                line-height: 20px;
+                font-weight: bold;
+            }
+        }
+    }
+}
+.page6{
+    @include mobile{
+        position: static;
+    }
+}

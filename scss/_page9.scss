@@ -1,0 +1,175 @@
+.page9Main{
+    background-image: url(../images/04-1_BgPC.jpg);
+    height: 720px;
+    & img{
+        width: 187px;
+        height: 45px;
+        position: absolute;
+        top: 250px;
+        left: 393px;
+    }
+    & p{
+        right: 201px;
+        position: absolute;
+        bottom: 163px;
+        color: #1b1b1b;
+        font-weight: bold;
+        font-size: 13.5px;
+        line-height: 30px;
+    }
+    @include mobile{
+        display: none;
+    } 
+}
+.inputFrom{
+    border: 1px solid #807c1f;
+    width: 246px;
+    height: 32px;
+    padding-left: 5px;
+    margin-left: 5px;
+    font-size: 14px;
+    margin-bottom: 18px;
+    background: linear-gradient(to bottom, #fefefe 0%,#cecece 100%);
+}
+.PcFrom{
+    position: absolute;
+    top: 315px;
+    left: 380px;
+    font-size: 14px;
+    color: #807c1f;
+    line-height: 28px;
+    flex-wrap: wrap;
+    display: flex;
+}
+.ml-1{
+    margin-left: 12px;
+}
+.form_right{
+    margin-left: 50px;
+}
+.cursor{
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+#selectTime{
+    width: 246px;
+    height: 32px;
+    font-size: 14px;
+    color: #a0a0a0;
+    margin-left: 5px;
+    background: #fefefe;
+    @include mobile{
+        width: 85%;
+    }
+}
+option{
+    color: #000;
+}
+.bgLine{
+    position: absolute;
+    top: 160px;
+    left: 29px;
+    width: 655px;
+    height: 2px;
+    background-image: url(../images/04-1_bgLine.png);
+}
+.contact{
+    position: absolute;
+    top: 495px;
+    right: 215px;
+    display: flex;
+    @include mobile{
+        position: static;
+        margin-left: 15px;
+    }
+}
+.safeCodeDiv{
+    width: 40px;
+    height: 30px;
+    & input{
+        width: 49px;
+        height: 27px;
+        border: 1px solid #807c1f;
+        padding-left: 5px;
+        margin-left: 5px;
+        line-height: 27px;
+        font-size: 14px;
+        background: #fefefe;
+        background: linear-gradient(to bottom, #fefefe 0%,#cecece 100%);
+    }
+
+}
+.safeCode1{
+    width: 80px;
+    height: 30px;
+    background-image: url(../images/04-1_safeCode1.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.resetBtn{
+    margin-left: 25px;
+    & input{
+        width: 90px;
+        height: 30px;
+        background-color: #fafafa;
+        border: 1px solid #807c1f;
+        cursor: pointer;
+    }
+}
+.SendOut{
+    margin-left: 5px;
+    & input{
+        width: 91px;
+        height: 31px;
+        background-color: #8b8623;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+}
+//手機板
+.page9Phone{
+    display: none;
+    @include mobile{
+        display: block;
+        position: relative;
+        margin-top: 40px;
+    }
+    & img{
+        width: 75%;
+        margin-left: 5%;
+        padding-top: 3%;
+    }
+    & p{
+        padding-top: 5px;
+        font-size: 12px;
+        line-height: 16px;
+        color: #1b1b1b;
+        font-weight: bold;
+        margin-left: 15px;
+        margin-bottom: 1.5rem;
+    }
+}
+.mobileForm{
+    padding: 15px;
+    & label{
+        font-size: 14px;
+        color: #807c1f;
+        line-height: 28px;
+    }
+}
+.inputMobile{
+    border: 1px solid #807c1f;
+    width: 85%;
+    height: 32px;
+    padding-left: 5px;
+    margin-left: 5px;
+    font-size: 14px;
+    margin-bottom: 18px;
+    background: linear-gradient(to bottom, #fefefe 0%,#cecece 100%);
+}
+.page9{
+    @include mobile{
+        position: static;
+    }
+}

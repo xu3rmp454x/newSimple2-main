@@ -1,0 +1,338 @@
+.page7Main{
+    & .page7Banner{
+        height: 720px;
+        width: 1280px;
+        background-image: url(../images/03-2_bg.jpg);
+        position: relative;
+        @media (max-width:1025px) {
+            background-size: contain;
+            width: 100%;
+            background-repeat: no-repeat;
+        }
+    }
+    & h2{
+        color: #807c1f;
+        font-size: $f-2;
+        font-weight: bold;
+        position: absolute;
+        left: 62px;
+        top: 247px;
+        line-height: 30px;
+        @media (max-width:1025px) {
+            left: 30px;
+            top: 170px;
+        }
+    }
+    & p{
+        color: #000;
+        font-size: 16px;
+        font-weight: bold;
+        position: absolute;
+        left: 62px;
+        top: 323px;
+        line-height: 26px;
+        @media (max-width:1025px) {
+            left: 30px;
+            top: 240px;
+            font-size: 14px;
+        }
+    }
+    @include mobile{
+        display: none;
+    }
+}
+.reactionBlackAll{
+    width: 297px;
+    height: 495px;
+    position: absolute;
+    top: 108px;
+    right: 310px;
+    background-image: url(../images/03-2_reactionAll.png);
+    @media (max-width:1025px) {
+        background-repeat: no-repeat;
+        background-size: 80%;
+        top: 86px;
+        right: 191px;
+    }
+}
+.btnClass7{
+    width: 145px;
+    height: 27px;
+    border: 1px solid $tiitlePrimay;
+    position: absolute;
+    right: 7%;
+    font-weight: bold;
+    color: #1b1b1b;
+    text-align: center;
+    line-height: 27px;
+    cursor: pointer;
+    transition: 0.4s all ease;
+    @media (max-width:1025px) {
+        right: 43px;
+    }
+}
+.btnClass7:hover{
+    color: #fff;
+    background-color: $tiitlePrimay;
+}
+.BtnReaction1{
+    top: 173px;
+    @media (max-width:1025px) {
+        top: 133px;
+    }
+}
+.BtnReaction2{
+    top: 275px;
+    @media (max-width:1025px) {
+        top: 217px;
+    }
+}
+.BtnReaction3{
+    top: 340px;
+    @media (max-width:1025px) {
+        top: 270px;
+    }
+}
+.BtnReaction4{
+    top: 406px;
+    @media (max-width:1025px) {
+        top: 321px;
+    }
+}
+.BtnReaction5{
+    top: 470px;
+    @media (max-width:1025px) {
+        top: 373px;
+    }
+}
+.BtnReaction6{
+    top: 535px;
+    @media (max-width:1025px) {
+        top: 425px;
+    }
+}
+.BtnReaction1-2{
+    width: 297px;
+    height: 495px;
+    position: absolute;
+    right: 309px;
+    top: 110px;
+    background-image: url(../images/03-2_reaction2.png);
+    display: none;
+}
+.BtnReaction2-2{
+    width: 297px;
+    height: 495px;
+    position: absolute;
+    right: 309px;
+    top: 110px;
+    background-image: url(../images/03-2_reaction3.png);
+    display: none;
+}
+.BtnReaction3-2{
+    width: 297px;
+    height: 495px;
+    position: absolute;
+    right: 309px;
+    top: 110px;
+    background-image: url(../images/03-2_reaction4.png);
+    display: none;
+}
+.BtnReaction4-2{
+    width: 297px;
+    height: 495px;
+    position: absolute;
+    right: 309px;
+    top: 110px;
+    background-image: url(../images/03-2_reaction5.png);
+    display: none;
+}
+.BtnReaction5-2{
+    width: 297px;
+    height: 495px;
+    position: absolute;
+    right: 309px;
+    top: 110px;
+    background-image: url(../images/03-2_reaction6.png);
+    display: none;
+}
+.BtnReaction6-2{
+    width: 297px;
+    height: 495px;
+    position: absolute;
+    right: 309px;
+    top: 110px;
+    background-image: url(../images/03-2_reaction7.png);
+    display: none;
+}
+.BtnReactionShow{
+    width: 100%;
+    // background: red;
+    height: 720px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+}
+.open{
+    width: 252px;
+    height: 661px;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    display: none;
+    & ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 300px;
+        & li{
+            margin-bottom: 5px;
+            cursor: pointer;
+            &:hover img{
+                opacity: 0.8;
+            }
+        }
+    }
+}
+.Reaction1{
+    background-image: url(../images/03-2_open2.jpg);
+}
+.Reaction2{
+    background-image: url(../images/03-2_open3.jpg);
+}
+.Reaction3{
+    background-image: url(../images/03-2_open4.jpg);
+    & ul{
+        margin-top: 240px;
+    }
+}
+.Reaction4{
+    background-image: url(../images/03-2_open5.jpg);
+    & ul{
+        margin-top: 240px;
+    }
+}
+.Reaction5{
+    top: 37px;
+    background-image: url(../images/03-2_open6.jpg);
+}
+.CloseBtn{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 25px;
+    right: 17px;
+    z-index: 3;
+    // background: red;
+    cursor: pointer;
+}
+
+// 手機板
+.page7Phone{
+    display: none;
+    position:relative;
+    @include mobile{
+        display: block;
+    }
+    & .page7Banner1{
+        padding-top: 40px;
+        margin-bottom: 35px;
+        & h2{
+            margin: 10px 0 0 15px;
+            color: #807c1f;
+        }
+        & p{
+            margin: 20px 15px 0 15px;
+            font-size: 12px;
+            line-height: 18px;
+            color: #000;
+        }
+    }
+    & .page7Banner2{
+        margin-bottom: 35px;
+        & img{
+            margin-left: 20px;
+        }
+        & p{
+            margin: 20px 15px 15px 15px;
+            font-size: 12px;
+            line-height: 18px;
+            color: #000;
+        }
+    }
+    & .page7Banner3{
+        margin-bottom: 35px;
+        & img{
+            margin-left: 20px;
+        }
+        & p{
+            margin: 20px 15px 15px 15px;
+            font-size: 12px;
+            line-height: 18px;
+            color: #000;
+        }
+    }
+    & .page7Banner4{
+        margin-bottom: 35px;
+        & img{
+            margin-left: 20px;
+        }
+        & p{
+            margin: 20px 15px 15px 15px;
+            font-size: 12px;
+            line-height: 18px;
+            color: #000;
+        }
+    }
+    & .page7Banner5{
+        margin-bottom: 35px;
+        & img{
+            margin-left: 20px;
+        }
+        & p{
+            margin: 20px 15px 15px 15px;
+            font-size: 12px;
+            line-height: 18px;
+            color: #000;
+        }
+    }
+    & .page7Banner6{
+        margin-bottom: 35px;
+        & img{
+            margin-left: 20px;
+        }
+        & p{
+            margin: 20px 15px 15px 15px;
+            font-size: 12px;
+            line-height: 18px;
+            color: #000;
+        }
+    }
+    & .page7Banner7{
+        margin-bottom: 35px;
+        & img{
+            margin-left: 20px;
+        }
+        & p{
+            margin: 20px 15px 15px 15px;
+            font-size: 12px;
+            line-height: 18px;
+            color: #000;
+        }
+    }
+}
+.page7Footer{
+    @include mobile{
+        position: static;
+    }
+}
+.flexColumn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & li{
+        margin-top: 10px;
+        cursor: pointer;
+    }
+}

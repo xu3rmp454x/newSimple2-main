@@ -1,0 +1,203 @@
+.page5BannerAll{
+    position: relative;
+    height: 720px;
+    @include mobile{
+        display: none;
+    }
+    & p{
+        line-height: 26px;
+        color: #1b1b1b;
+        font-weight: 500;
+    }
+}
+.page5Banner1{
+    left: 0;
+    & h2{
+        top: 253px;
+        left: 499px;
+        font-size: $f-2;
+        font-weight: bold;
+        color: $h2-Primery;
+    }
+    & p{
+        top: 288px;
+        left: 337px;
+        line-height: 26px;
+        text-align: center;
+        font-weight: bold;
+        color: #1b1b1b;
+    }
+}
+.page5Banner2{
+    width: 100%;
+    left: 1280px;
+    & h2{
+        font-size: $f-2;
+        color: $h2-Primery;
+        top: 213px;
+        left: 510px;
+    }
+    & p{
+        top: 260px;
+        left: 446px;
+        line-height: 26px;
+        text-align: center;
+        font-weight: bold;
+        color: #1b1b1b;
+    }
+    & .page5Nav{
+        display: flex;
+        left: 193px;
+        top: 430px;
+        & li{
+            margin-right: 10px;
+            & img{
+                transition: all .4s;
+                border: 2px solid #c3c3c3;
+                cursor: pointer;
+                &:hover{
+                    border: 2px solid $tiitlePrimay;
+                }
+            }
+        }
+    }
+    & .page5Banner2Show{
+        height: 720px;
+        top: 0;
+        position: absolute;
+        width: 100%;
+        display: none;
+        // background-image: url(../images/buildingPic1.jpg);
+        z-index: 11;
+    }
+}
+.page5Banner3{
+    width: 100%;
+    left: 2560px;
+    & h2{
+        font-size: $f-2;
+        top: 197px;
+        left: 131px;
+        color: $h2-Primery;
+    }
+    & p{
+        top: 236px;
+        left: 131px;
+        line-height: 26px;
+        font-weight: bold;
+        color: #1b1b1b;
+    }
+    & h3{
+        color: $h2-Primery;
+        top: 430px;
+        left: 200px;
+        & span{
+            font-size: 22px;
+            margin-left: 1rem;
+        }
+    }
+}
+.page5Banner4{
+    width: 100%;
+    left: 3840px;
+    & .page5Banner4_title{
+        background-image: url(../images/building1_bannerPig04-title.png);
+        width: 328px;
+        height: 74px;
+        top: 268px;
+        left: 218px;
+    }
+    & h3{
+        color: $h2-Primery;
+        top: 241px;
+        left: 168px;
+        & span{
+            font-size: 22px;
+            margin-left: 1rem;
+        }
+    }
+    & p:nth-of-type(1){
+        top: 342px;
+        left: 169px;
+    }
+    & p:nth-of-type(2){
+        top: 442px;
+        left: 169px;
+    }
+}
+//手機板本
+.page5BannerMobile{
+    display: none;
+    & p{
+        margin: 20px 20px 20px 15px;
+        line-height: 26px;
+        font-size: 12px;
+        color: #1b1b1b;
+        font-weight: bold;
+    }
+    @include mobile{
+        display: block;
+        position: relative;
+    }
+}
+.page5Mobile1{
+    & h2{
+        margin: 20px 0 20px 15px;
+        font-weight: bold;
+        color: $h2-Primery;
+        font-size: $f-0;
+    }
+}
+.page5Mobile2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    & li{
+        margin: 10px;
+        cursor: pointer;
+        & img{
+            transition: all .4s;
+            border: 2px solid #c3c3c3;
+            &:hover{
+                border: 2px solid #8b8623;
+                object-fit: cover;
+            }
+        }
+        & h3{
+            font-size: 10px;
+            margin-top: 8px;
+            color: #1b1b1b;
+            text-align: right;
+        }
+    }
+}
+.page5Mobile3{
+    margin-top: 34px;
+    & h2{
+        margin: 20px 0 20px 15px;
+        color:$h2-Primery ;
+        font-weight: bold;
+        font-size: $f-0;
+    }
+    & .creatorSigner{
+        margin: 20px 0 0px 15px;
+        width: 70%;
+        margin-bottom: 30px;
+    }
+}
+.page5Mobile4{
+    & h2{
+        margin: 20px 0 20px 15px;
+        color:$h2-Primery ;
+        font-weight: bold;
+        font-size: $f-0;
+    }
+    & p{
+        margin-bottom: 50px;
+    }
+}
+// 尾部
+.page5{
+    z-index: 12;
+    position: static;
+}

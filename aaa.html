@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.box{
+    width: 500px;
+    height: 500px;
+    background-color: #f00;
+}
+.banner1{
+    width: 800px;
+    height: 100px;
+    background-color: #333;
+}
+.banner2{
+    width: 600px;
+    height: 100px;
+    background-color: yellow;
+}
+.banner3{
+    width: 1000px;
+    height: 100px;
+    background-color: pink;
+}
+</style>
+<body>
+    <div class="box"></div>
+    <div class="banner1"></div>
+    <div class="banner2"></div>
+    <div class="banner3"></div>
+</body>
+<script>
+    let box = document.querySelector(".box");
+    let banner1 = document.querySelector(".banner1");
+    let banner2 = document.querySelector(".banner2");
+    let banner3 = document.querySelector(".banner3");
+    const dfg = function (e) {
+        const move = Math.round(e.offsetX / 5);
+        const move2 = Math.round(e.offsetX)
+        console.log(move2);
+        // banner1.style.transform = `translateX(calc(${move} %)+${move2}px)`;
+        banner1.style.transform = `translateX(calc(-${move}% + ${move2}px))`;
+        banner2.style.transform = `translateX(calc(-${move}% + ${move2}px))`;
+        banner3.style.transform = `translateX(calc(-${move}% + ${move2}px))`;
+    }
+    
+    box.addEventListener("mousemove",dfg);
+
+</script>
+</html>

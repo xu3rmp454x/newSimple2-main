@@ -1,0 +1,125 @@
+.page3Main{
+    position: absolute;
+    height: 720px;
+    // background: red;
+    width: 100%;
+    @include mobile{
+        display: none;
+    }
+}
+.page3Mask{
+    align-items: center;
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+    height: 565px;
+    width: 255px;
+    color: $secondary;
+    & h2{
+        font-size: 36px;
+        line-height: 1.6;
+    }
+    & h3{
+        font-size: $f-2;
+        font-weight: normal;
+        text-indent: 27px;
+    }
+}
+//小圖區
+.page3_bottomNav{
+    position: absolute;
+    background: #313131;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+    bottom: 40px;
+    & li{
+        margin-right: 10px;
+        cursor: pointer;
+        & img{
+            width: 105px;
+            height: 58px;
+            border: 2px solid #929292;
+            opacity: .5;
+            &.active{
+                opacity: 1;
+                transform: scale(1.2);
+                border-color: $secondary;
+            }
+        }
+    }
+    @include mobile{
+        display: none;
+    }
+}
+//大圖
+.boxOver{
+    position: relative;
+    top: 40px;
+    overflow: hidden;
+    width: 1025px;
+}
+.page3BannerBox{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.page3Banner1{
+    background-image: url(../images/life_bannerBig01.png);
+    height: 583px;
+    width: 909px;
+}
+.page3Banner2{
+    background-image: url(../images/life_bannerBig01-1.png);
+    height: 583px;
+    width: 909px;
+    margin-left: 10px;
+}
+.page3Banner3{
+    background-image: url(../images/life_bannerBig04-3.png);
+    width: 1029px;
+    height: 684px;
+    margin-left: 10px;
+}
+.aaa{
+    width: 100%;
+    position: absolute;
+    // background: red;
+    height: 100%;
+    @include mobile{
+        display: none;
+    }
+}
+
+//手機板main
+.page3MpbileMain{
+    display: none;
+    position: relative;
+    @include mobile{
+        display: block;
+    }
+}
+.page3MpbileMain li{
+    border-bottom: 3px solid #b0a800;
+}
+.page3MpbileMainText{
+    color: $tiitlePrimay;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    & h2{
+        font-weight: bold;
+        line-height: 1.5;
+        font-size: 15px;
+    }
+    & h3{
+        font-size: 12px;
+        font-weight: normal;
+    }
+}
+.page3Footer{
+    @include mobile{
+        position: relative;
+    }
+}
