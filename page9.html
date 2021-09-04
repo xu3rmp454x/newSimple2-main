@@ -10,9 +10,9 @@
     <title>直心巷</title>
 </head>
 <body>
-    <!-- <div class="loading">
+    <div class="loading">
         <img src="./images/loading.gif" alt="">
-    </div> -->
+    </div>
     <div class="warp">
         <header>
             <h1 class="logo">直心巷</h1>
@@ -194,11 +194,11 @@
                     <input type="text" name="" id="safeCodeInputMobile">
                 </div>
                 <div class="resetBtn">
-                    <input type="reset" id="resetBtn" value="清除重填">
+                    <input type="reset" id="resetBtnMobile" value="清除重填">
                 </div>
                 <div class="SendOut">
                     <!-- <input type="submit" id="SendOut" value="送出"> -->
-                    <input type="submit" name="SB" id="SendOut" value="送出">
+                    <input type="submit" name="SB" id="SendOutMobile" value="送出">
                     <!-- <input type="text" name="UserName"> <input type="submit" name="SB" value="送出表單"> -->
                 </div>
             </div>
@@ -270,10 +270,10 @@
                 }
             }
             pcShowMap();
-            //loading
-            // setTimeout(function() {
-            //     $('.loading').fadeOut(500);
-            // },1000);
+            // loading
+            setTimeout(function() {
+                $('.loading').fadeOut(500);
+            },1000);
 
         })
 
@@ -334,6 +334,62 @@
             console.log('姓名:', text.value);
 		    console.log('手機號碼:', tel.value);
 		    console.log('e-mail:', email.value);
+            // return false;
+        })
+
+        //手機表單驗證
+        let textMobile = document.querySelector("#textMobile");
+        let telMobile = document.querySelector("#telMobile");
+        let emailMobile = document.querySelector("#emailMobile");
+        let resetBtnMobile = document.querySelector("#resetBtnMobile");
+        let HomePhoneMobile = document.querySelector("#HomePhoneMobile");
+        let SendOutMobile = document.querySelector("#SendOutMobile");
+
+        resetBtnMobile.addEventListener("click",function(e) {
+            if(textMobile.value !=""){
+                textMobile.value = "";
+            }
+            if(telMobile.value !=""){
+                telMobile.value = "";
+            }
+            if(emailMobile.value !=""){
+                emailMobile.value = "";
+            }
+            if(HomePhoneMobile.value !=""){
+                HomePhoneMobile.value = "";
+            }
+            $("#selectTimeMobile").get(0).selectedIndex=0; 
+
+            //清除radio
+            $('input[name="gender" ]').prop('checked', false);
+        })
+
+        //送出喔    
+        SendOutMobile.addEventListener("click",function(e) {
+            let errorArr = [];//儲存錯誤的資訊用
+
+            if(textMobile.value ===""){
+                // alert("請填寫姓名欄位");
+                errorArr.push("請填寫姓名欄位");
+            }
+            if(telMobile.value ===""){
+                // alert("請填寫手機欄位");
+                errorArr.push("請填寫手機欄位");
+            }
+            if(emailMobile.value ===""){
+                // alert("請填寫信箱欄位");
+                errorArr.push("請填寫信箱欄位");
+            }
+            if(errorArr.length !=0 ){
+                let msg = errorArr.toString().replace(/,/g , "\n");
+                // console.log(msg);
+                alert(msg)
+                return;
+            }
+            alert("我們已收到您訊息，會盡速與您聯繫，謝謝。")
+            console.log('姓名:', textMobile.value);
+		    console.log('手機號碼:', telMobile.value);
+		    console.log('e-mail:', emailMobile.value);
             // return false;
         })
 

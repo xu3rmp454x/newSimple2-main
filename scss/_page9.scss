@@ -58,9 +58,6 @@
     color: #a0a0a0;
     margin-left: 5px;
     background: #fefefe;
-    @include mobile{
-        width: 85%;
-    }
 }
 option{
     color: #000;
@@ -172,4 +169,12 @@ option{
     @include mobile{
         position: static;
     }
+}
+#selectTimeMobile{
+    width: 85%;
+    height: 32px;
+    font-size: 14px;
+    color: #a0a0a0;
+    margin-left: 5px;
+    background: #fefefe;
 }

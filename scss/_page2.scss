@@ -24,7 +24,7 @@
     align-items: center;
     width: 100%;
     padding: 10px 0;
-    bottom: 40px;
+    bottom: -53px;
     @include mobile{
         display: none;
     }
@@ -87,10 +87,5 @@
             font: size 12px;
             color: black;
         }
-    }
-}
-@media (max-width:769px) {
-    .page2Position{
-        position: fixed;
     }
 }

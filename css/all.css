@@ -687,7 +687,7 @@ footer {
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
-  z-index: 99;
+  z-index: 11;
   display: none;
 }
 
@@ -758,7 +758,7 @@ footer {
           align-items: center;
   width: 100%;
   padding: 10px 0;
-  bottom: 40px;
+  bottom: -53px;
 }
 
 @media (max-width: 769px) {
@@ -849,12 +849,6 @@ footer {
   .page2Title p {
     font: size 12px;
     color: black;
-  }
-}
-
-@media (max-width: 769px) {
-  .page2Position {
-    position: fixed;
   }
 }
 
@@ -2718,12 +2712,6 @@ body {
   background: #fefefe;
 }
 
-@media (max-width: 769px) {
-  #selectTime {
-    width: 85%;
-  }
-}
-
 option {
   color: #000;
 }
@@ -2863,5 +2851,14 @@ option {
   .page9 {
     position: static;
   }
+}
+
+#selectTimeMobile {
+  width: 85%;
+  height: 32px;
+  font-size: 14px;
+  color: #a0a0a0;
+  margin-left: 5px;
+  background: #fefefe;
 }
 /*# sourceMappingURL=all.css.map */
